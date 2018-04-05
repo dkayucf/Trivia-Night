@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My JavaScript App</title>
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+      <div class="row mt-4">
+          <div class="col-md-8 mx-auto">
+              <div class="card">
+                  <div class="card-header text-light">
+                     <div class="row">
+                         <div class="col-md-4">
+                            <h1 class="heading-1">Trivia Night!</h1> 
+                         </div>
+                         <div class="col-md-4 text-center">
+                             <h1 class="heading-2 timer">00:00</h1>
+                         </div>
+                         <div class="col-md-4">
+                           <div class="input-group d-flex flex-row mt-2">
+                                <label for="trivia_category" class="align-middle mb-0 mt-2 mr-2">Trivia Category</label>
+                                <select name="trivia_category" id="triviaCategory" class="form-control">
+                                    <option value="any">Any Category</option>
+                                    <option value="9">General Knowledge</option>
+                                    <option value="10">Entertainment: Books</option>
+                                    <option value="11">Entertainment: Film</option>
+                                    <option value="12">Entertainment: Music</option>
+                                    <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                                    <option value="14">Entertainment: Television</option>
+                                    <option value="15">Entertainment: Video Games</option>
+                                    <option value="16">Entertainment: Board Games</option>
+                                    <option value="17">Science &amp; Nature</option>
+                                    <option value="18">Science: Computers</option>
+                                    <option value="19">Science: Mathematics</option>
+                                    <option value="20">Mythology</option>
+                                    <option value="21">Sports</option>
+                                    <option value="22">Geography</option>
+                                    <option value="23">History</option>
+                                    <option value="24">Politics</option>
+                                    <option value="25">Art</option>
+                                    <option value="26">Celebrities</option>
+                                    <option value="27">Animals</option>
+                                    <option value="28">Vehicles</option>
+                                    <option value="29">Entertainment: Comics</option>
+                                    <option value="30">Science: Gadgets</option>
+                                    <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                                    <option value="32">Entertainment: Cartoon &amp; Animations</option>		
+                                </select>
+                            </div>
+                                
+                         </div>
+                     </div>
+                      
+                      
+                  </div>
+                  <div class="card-body">
+                     <div class="container startTriviaBox mt-5">
+                         <div class="row">
+                             <div class="col-md-8 mx-auto">
+                                 <h1 class="heading-1 text-center">
+                                     Select Your Favorite Topic!
+                                 </h1>
+                             </div>
+                         </div>
+                     </div>
+                      <div class="questionBox option" id="q"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="answerChoiceContainer col-md-5">
+                                <div class="option my-3"></div>
+                                <div class="option my-3"></div>
+                                <div class="option my-3"></div>
+                                <div class="option my-3"></div>  
+                            </div>
+                            <div class="keepScore col-md-4 offset-md-3">
+                               <div class="card">
+                                   <div class="card-body scoreCard">
+                                        <div class="row text-center">
+                                            <div class="col-md-12 my-4">
+                                                <h3>Number Correct:</h3>
+                                                <h4 class="numCorrect"></h4>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12 my-4">
+                                                <h3>Number Incorrect:</h3>
+                                                <h4 class="numIncorrect"></h4>
+                                            </div>
+                                        </div>   
+                                   </div>
+                               </div>
+                            </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary answerSubmit ml-3" style="display: none">Submit Answer</button>
+                        <button class="btn btn-success nextQuestion ml-3" style="display: none">Next Question</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
